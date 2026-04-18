@@ -1,0 +1,24 @@
+yolo_config:
+  conf_thred_blue: 0.6
+  conf_thred_red: 0.2
+  nms_thresh: 0.45
+  imgsz: 320
+  model_path: "config/armor_yolov8.onnx"
+
+armor_params:
+  fx: 1018.8128207317047
+  fy: 1018.8362340780371
+  cx: 724.8993224217613
+  cy: 546.9981003406728
+  k1: -0.14897716425876054
+  k2: 0.11964153641279855
+  p1: 0.00020495355359656886
+  p2: 0.0005721992045503769
+  k3: -0.038332289925245226
+
+armor_size:
+  width: 0.141
+  height: 0.125
+
+
+
