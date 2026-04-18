@@ -6,5 +6,5 @@ https://github.com/whh15360-cpu/my_rm/tree/main/armor_pose_solver
 
 new为c++的新版本，包含众多功能
 
-train4为模型配置文件
+train4为模型配置文件  
 https://github.com/whh15360-cpu/my_rm/tree/main/train4
