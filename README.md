@@ -11,3 +11,6 @@ https://github.com/whh15360-cpu/my_rm/tree/main/train
 
 armor_interfaces为接口相关的项目，msg  
 https://github.com/whh15360-cpu/my_rm/tree/main/armor_interfaces
+
+hik_camera本项目为海康相机在ros2的相关配置  
+https://github.com/whh15360-cpu/my_rm/tree/main/hik_camera
