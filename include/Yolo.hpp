@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 #ifndef YOLO_HPP
+=======
+/*#ifndef YOLO_HPP
+>>>>>>> 33463e2bc191262bb0ef0e94a4143a5cba0005c8
 #define YOLO_HPP
 
 #include <opencv2/opencv.hpp>
@@ -6,7 +10,11 @@
 #include <vector>
 #include <string>
 
+<<<<<<< HEAD
 
+=======
+// ====================== 配置常量（可根据需求修改）======================
+>>>>>>> 33463e2bc191262bb0ef0e94a4143a5cba0005c8
 // 模型输入尺寸（和训练时一致）
 const int INPUT_WIDTH = 320;
 const int INPUT_HEIGHT = 320;
@@ -18,15 +26,26 @@ const float NMS_THRESHOLD = 0.45;
 const float SCALE = 1.0 / 255.0;
 const cv::Scalar MEAN = cv::Scalar(0, 0, 0);
 
+<<<<<<< HEAD
 // 检测结果结构体
 struct DetectionResult {
     int class_id;          // 类别ID
     std::string class_name;// 类别名称（0表示蓝色装甲板，1表示红色装甲板）
+=======
+// ====================== 检测结果结构体 ======================
+struct DetectionResult {
+    int class_id;          // 类别ID
+    std::string class_name;// 类别名称
+>>>>>>> 33463e2bc191262bb0ef0e94a4143a5cba0005c8
     float confidence;      // 置信度
     cv::Rect bbox;         // 检测框（x,y,w,h）
 };
 
+<<<<<<< HEAD
 
+=======
+// ====================== YOLO核心类（CPU版）======================
+>>>>>>> 33463e2bc191262bb0ef0e94a4143a5cba0005c8
 class YOLOSolver {
 public:
     // 构造函数：加载模型和类别文件
@@ -37,7 +56,10 @@ public:
     
     // 核心方法：检测单张图像
     std::vector<DetectionResult> detect(const cv::Mat& img);
+<<<<<<< HEAD
     std::vector<DetectionResult> detect(const cv::Mat& output, const cv::Size& img_size);
+=======
+>>>>>>> 33463e2bc191262bb0ef0e94a4143a5cba0005c8
     
     // 辅助方法：绘制检测结果到图像
     void drawResults(cv::Mat& img, const std::vector<DetectionResult>& results);
@@ -50,7 +72,10 @@ private:
     // 私有方法：图像预处理
     cv::Mat preprocessImage(const cv::Mat& img);
     
+<<<<<<< HEAD
     
+=======
+>>>>>>> 33463e2bc191262bb0ef0e94a4143a5cba0005c8
     // 私有方法：解析模型输出
     std::vector<DetectionResult> parseOutput(
         const cv::Mat& output, 
@@ -61,4 +86,10 @@ private:
     std::vector<std::string> loadLabels(const std::string& path);
 };
 
+<<<<<<< HEAD
 #endif // YOLO_HPP
+=======
+#endif 
+*/
+
+>>>>>>> 33463e2bc191262bb0ef0e94a4143a5cba0005c8
